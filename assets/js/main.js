@@ -28,7 +28,7 @@ $(function() {
         db.collection('vibers').doc(key).set({ score: score }, { merge: true });
     });
 
-    db.collection('vibers')
+    db.collection('vibers').orderBy('score', 'desc')
     .onSnapshot(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             const data = doc.data();
