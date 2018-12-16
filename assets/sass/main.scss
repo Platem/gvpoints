@@ -3,8 +3,8 @@ html, body {
     padding: 0;
 
     animation: body-back 10s infinite;
-    background-color: #FFFFFF;
-    background-image: linear-gradient(62deg, #FFFFFF 0%, #EF3B36 100%);
+    background-color: #eef2f3;
+    background-image: linear-gradient(62deg, #eef2f3 0%, #8e9eab 100%);
     background-size: 400% 400%;
 }
 
@@ -31,7 +31,7 @@ header {
     line-height: 56px;
     text-align: center;
     font-size: 24pt;
-    background-color: rgba(200, 200, 200, 0.4);
+    background-color: rgba(200, 200, 200, 0.0);
 }
 
 main {
@@ -53,6 +53,7 @@ main {
         img {
             border: 10px solid white;
             border-radius: 50%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
             height: 240px;
             width: 240px;
@@ -80,6 +81,8 @@ main {
         div.controls {
             margin: auto;
             display: flex;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            border-radius: 6px;
 
             button {
                 height: 32px;
